@@ -7,7 +7,7 @@ body {
 
 header {
 	width: 100%;
-	background-image: url(img/designer_2.png);
+	background-image: url(img/designer_1.png);
 	background-repeat: no-repeat;
 	background-position: 90% 95%;
 }
@@ -99,8 +99,66 @@ h1 {
 }
 
 .intro {
-	padding: 206px 0;
+	padding: 206px 0 485px 0;
 	max-width: 540px;
+}
+
+h3 {
+	font-weight: 500;
+	font-size: 36px;
+	line-height: 48px;
+	color: #091133;
+}
+
+.info p {
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 26px;
+	color: #6F7CB2;
+}
+
+h5 {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 26px;
+	color: #091133;
+	margin: 10px 0;
+}
+
+.card1 p {
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 18px;
+	color: #5D6970;
+	margin-top: 0;
+}
+
+.details, .maincard {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.card1 {
+	max-width: 255px;
+	margin-top: 30px;
+}
+
+.info {
+	max-width: 540px;
+}
+
+.maincard {
+	margin: 30px 0;
+}
+
+@media (max-width: 1200px) {
+	.maincard {
+    flex-direction: column-reverse;
+    justify-content: center;
+    }
 }
 
 @media (max-width: 768px) {
@@ -111,6 +169,7 @@ h1 {
 	.nav img {
 		padding-right: 0;
 	}
+
 }
 
 @media (max-width: 576px) {
@@ -123,7 +182,7 @@ h1 {
 	}
 
 	header {
-	background-position: 10% 50%;
+	background-position: 20% 50%;
     }
 
     .intro {
@@ -142,5 +201,18 @@ h1 {
     color: #091133;
 	background-color: #ffffff;
 	border: solid 2px #111B47;
+    }
+
+	.details {
+    flex-direction: column-reverse;
+    justify-content: center;
+    }
+
+    .maincard img {
+    	width: 100%;
+    }
+
+    .card1 img {
+	width: 36px;
     }
 }
