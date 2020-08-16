@@ -110,7 +110,7 @@ h3 {
 	color: #091133;
 }
 
-.info p {
+.info p, .about p {
 	font-weight: normal;
 	font-size: 16px;
 	line-height: 26px;
@@ -133,7 +133,7 @@ h5 {
 	margin-top: 0;
 }
 
-.details, .maincard {
+.details, .maincard, .card {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -151,12 +151,57 @@ h5 {
 }
 
 .maincard {
-	margin: 30px 0;
+	padding: 40px 0;
+}
+
+.about {
+	max-width: 445px;
+}
+
+.card {
+	margin: 70px 0;
+	justify-content: space-between;
+}
+
+.about h3 {
+	margin: 10px 0;
+}
+
+.about button {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 24px;
+	text-align: center;
+	color: #FFFFFF;
+	padding: 5px 30px;
+	margin-top: 15px;
+	border: solid 2px transparent;
+}
+
+.about button:hover {
+	color: #091133;
+	background-color: #ffffff;
+	border: solid 2px #111B47;
+}
+
+.card img {
+	margin: auto;
 }
 
 @media (max-width: 1200px) {
 	.maincard {
     flex-direction: column-reverse;
+    justify-content: center;
+    }
+
+    .small {
+    	width: 480px;
+    }
+}
+
+@media (max-width: 992px) {
+	.card {
+    flex-direction: column;
     justify-content: center;
     }
 }
@@ -214,5 +259,9 @@ h5 {
 
     .card1 img {
 	width: 36px;
+    }
+
+    .card img {
+    width: 100%;
     }
 }
