@@ -7,9 +7,9 @@ body {
 
 header {
 	width: 100%;
-	background-image: url(img/designer_1.png);
+	background-image: url(img/designer_2.png);
 	background-repeat: no-repeat;
-	background-position: right;
+	background-position: 90% 95%;
 }
 
 ul {
@@ -42,7 +42,7 @@ li {
 	padding-right: 100px;
 }
 
-.nav button {
+button {
 	font-weight: 500;
 	font-size: 12px;
 	line-height: 18px;
@@ -51,9 +51,10 @@ li {
 	background-color: #111B47;
 	border: none;
 	padding: 5px 56px;
+	border: solid 2px transparent;
 }
 
-.nav button:hover {
+button:hover {
 	color: #091133;
 	background-color: #ffffff;
 	border: solid 2px #111B47;
@@ -66,6 +67,40 @@ li {
 	flex-wrap: wrap;
 	align-items: baseline;
 	padding: 16px 0;
+	background: transparent;
+}
+
+h1 {
+	font-weight: 500;
+	font-size: 50px;
+	line-height: 66px;
+    letter-spacing: 1px;
+    color: #091133;
+}
+
+.intro p {
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 30px;
+	color: #505F98;
+}
+
+.intro button {
+	padding: 5px 38px;
+	margin-right: 25px;
+	margin-top: 43px;
+	font-size: 16px;
+	line-height: 26px;
+}
+
+.intro .more {
+	padding: 5px 52px;
+	margin-right: 0;
+}
+
+.intro {
+	padding: 206px 0;
+	max-width: 540px;
 }
 
 @media (max-width: 768px) {
@@ -86,4 +121,26 @@ li {
 	select {
 		display: flex;
 	}
+
+	header {
+	background-position: 10% 50%;
+    }
+
+    .intro {
+	padding: 60px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    }
+
+    .intro button {
+    	margin: 0 0 20px 0;
+    }
+
+    .more {
+    color: #091133;
+	background-color: #ffffff;
+	border: solid 2px #111B47;
+    }
 }
