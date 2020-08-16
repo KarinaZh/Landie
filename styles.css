@@ -110,7 +110,7 @@ h3 {
 	color: #091133;
 }
 
-.info p, .about p {
+.info p, .about p, .pricing p {
 	font-weight: normal;
 	font-size: 16px;
 	line-height: 26px;
@@ -188,6 +188,118 @@ h5 {
 	margin: auto;
 }
 
+.pricing {
+	background-image: url(img/Rectangle.png);
+	width: 100%
+}
+
+.pricing {
+	text-align: center;
+	padding: 200px 0 150px 0;
+}
+
+.pricing p {
+	max-width: 600px;
+	margin: auto;
+}
+
+.pricing .grey {
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 24px;
+	color: #5D6970;
+	padding-top: 60px;
+	padding-bottom: 10px;
+}
+
+.pricing h3 {
+	margin: 20px 0;
+}
+
+.pricing h1 {
+	margin-top: 30px;
+	margin-bottom: 5px;
+}
+
+.pricing button {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 24px;
+	text-align: center;
+	color: #FFFFFF;
+	padding: 5px 55px;
+	border: solid 2px transparent;
+}
+
+.pricing button:hover {
+	color: #091133;
+	background-color: #ffffff;
+	border: solid 2px #111B47;
+}
+
+footer {
+	width: 100%;
+	background-color: #E7ECFF;
+	padding: 20px 0;
+}
+
+footer p, footer li a {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 24px;
+	color: #939EA4;
+}
+
+.purchase button {
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 18px;
+	text-align: center;
+	color: #FFFFFF;
+	padding: 3px 15px;
+	border: solid 2px transparent;
+}
+
+.purchase button:hover {
+	color: #091133;
+	background-color: #ffffff;
+	border: solid 2px #111B47;
+}
+
+.purchase {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 20px 0;
+	border-bottom: solid 1px #CDD1D4;
+}
+
+footer li a:hover {
+	color:  #091133;
+}
+
+.fab {
+	color: #B0B8BC;
+	padding-left: 30px;
+}
+
+.fab:hover {
+	color:  #091133;
+}
+
+.contact {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 30px 0 20px 0;
+}
+
+
+
 @media (max-width: 1200px) {
 	.maincard {
     flex-direction: column-reverse;
@@ -215,6 +327,9 @@ h5 {
 		padding-right: 0;
 	}
 
+	.fab {
+	padding: 10px 30px 0 0;
+    }
 }
 
 @media (max-width: 576px) {
@@ -263,5 +378,13 @@ h5 {
 
     .card img {
     width: 100%;
+    }
+
+    .purchase {
+    	justify-content: center;
+    }
+
+    .purchase img {
+    	padding: 0 10px;
     }
 }
